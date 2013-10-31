@@ -1,0 +1,125 @@
+fileFormatVersion: 2
+guid: c90765b799f470b46831ac93feb03b63
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Boole
+    100002: Boole_1
+    100004: Boole_2
+    100006: Cube
+    100008: Cube_2
+    100010: Cube_3
+    100012: Cube_4
+    100014: Cylinder
+    100016: Cylinder_1
+    100018: Oil_Tank
+    100020: Oil_Tank_1
+    100022: Oil_Tank_1_2
+    100024: Oil_Tank_2
+    100026: Oil_Tank_3
+    100028: Oil_Tank_4
+    100030: Sky
+    100032: Sphere
+    100034: Sphere_1
+    100036: Sphere_1_2
+    100038: //RootNode
+    400000: Boole
+    400002: Boole_1
+    400004: Boole_2
+    400006: Cube
+    400008: Cube_2
+    400010: Cube_3
+    400012: Cube_4
+    400014: Cylinder
+    400016: Cylinder_1
+    400018: Oil_Tank
+    400020: Oil_Tank_1
+    400022: Oil_Tank_1_2
+    400024: Oil_Tank_2
+    400026: Oil_Tank_3
+    400028: Oil_Tank_4
+    400030: Sky
+    400032: Sphere
+    400034: Sphere_1
+    400036: Sphere_1_2
+    400038: //RootNode
+    2300000: Cube
+    2300002: Cube_3
+    2300004: Cylinder
+    2300006: Cylinder_1
+    2300008: Oil_Tank
+    2300010: Oil_Tank_1
+    2300012: Oil_Tank_3
+    2300014: Sphere
+    2300016: Sphere_1
+    3300000: Cube
+    3300002: Cube_3
+    3300004: Cylinder
+    3300006: Cylinder_1
+    3300008: Oil_Tank
+    3300010: Oil_Tank_1
+    3300012: Oil_Tank_3
+    3300014: Sphere
+    3300016: Sphere_1
+    4300000: Oil_Tank
+    4300002: Oil_Tank_1
+    4300004: Sphere
+    4300006: Cylinder_1
+    4300008: Cylinder
+    4300010: Sphere_1
+    4300012: Cube
+    4300014: Oil_Tank_3
+    4300016: Cube_3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 2
+  userData: 
