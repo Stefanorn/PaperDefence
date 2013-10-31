@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Prefabs/Towers/#Scripts/EnergyBonusOnDestroy.cs">
+    <Files>
+      <File FileName="Assets/BasicTower.cs" Line="51" Column="3" />
+      <File FileName="Assets/Prefabs/Towers/#Scripts/TowerSelector.cs" Line="54" Column="2" />
+      <File FileName="Assets/Prefabs/Towers/#Scripts/SelectTowerOnClicked.cs" Line="27" Column="24" />
+      <File FileName="Assets/Scripts/HudDisplay.cs" Line="32" Column="29" />
+      <File FileName="Assets/Scripts/TowerSelectorInBegining.cs" Line="25" Column="5" />
+      <File FileName="Assets/Prefabs/Towers/#Scripts/EnergyBonusOnDestroy.cs" Line="22" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
