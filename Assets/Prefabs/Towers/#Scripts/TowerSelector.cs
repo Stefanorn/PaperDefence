@@ -81,7 +81,8 @@ public class TowerSelector : MonoBehaviour
 		{
 			foreach(GameObject menuItem in GameObject.FindGameObjectsWithTag("GameMenuItems"))
 			{
-				Destroy(menuItem);
+				menuItem.gameObject.SetActive(false);
+			//	Destroy(menuItem);
 			}
 			gameHasStarted = true;
 			float xPos = -6.0f;

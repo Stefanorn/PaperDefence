@@ -31,7 +31,7 @@ public class HudDisplay : MonoBehaviour {
 
 		energy = initialEnergy;
 		maxEnergy = initialEnergy;
-		
+		ReadHighScore();
 		
 	}
 	
@@ -53,31 +53,46 @@ public class HudDisplay : MonoBehaviour {
 			gameHasEndede = true;
 			endScore = enemyConuter;
 			damageDisplay.GetComponent<TextMesh>().text = "endScore : " + endScore.ToString();
+			lives--;
+			SetHighScore();
 			Application.LoadLevel("HighScore");
 		}
 		
 		
 	}
 	
-	void HighScore()
+	void SetHighScore()
 	{
-		highScore[11] = score;
+		highScore[10] = score;
 	
+		
+		int j = 0;
 		int temp = 0;
 		
-		for( int i = 0; i < highScore.Length; i++)
+		for(int index = 1; index < highScore.Length; index++)
 		{
-			if(highScore[i] > 0)
+			j = index;
+			temp = highScore[index];
+			while((j > 0) && (highScore[j-1] > temp))
 			{
-			
+				highScore[j] = highScore[j-1];
+				j--;
 			}
-		}	
+			highScore[j] = temp;
+		}
+		for(int i = 0; i < highScore.Length; i++)
+		{
+			PlayerPrefs.SetInt("highScoreNr" + (highScore.Length - i) , highScore[i]);
+		}
+
 	}
-		
-		
-		
-	
-	
+	void ReadHighScore()
+	{
+		for(int i = 0; i < (highScore.Length - 1); i++)
+		{
+			highScore[i] = PlayerPrefs.GetInt("highScoreNr" +(i+1) );
+		}
+	}
 	private static HudDisplay instance = null;
 	public static HudDisplay Instance
 	{
