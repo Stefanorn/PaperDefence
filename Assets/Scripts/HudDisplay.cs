@@ -32,7 +32,6 @@ public class HudDisplay : MonoBehaviour {
 		energy = initialEnergy;
 		maxEnergy = initialEnergy;
 		ReadHighScore();
-		
 	}
 	
 	// Update is called once per frame
@@ -41,8 +40,11 @@ public class HudDisplay : MonoBehaviour {
 		GameObject tower =  TowerSelector.Instance.GetSelectedToewr();
 				
 		if(TowerSelector.Instance.gameHasStarted){ 
-			enemyCounterDisplay.GetComponent<TextMesh>().text = "Enemys : " + enemyConuter.ToString(); 
-			NameDisplay.GetComponent<TextMesh>().text = "name : " + tower.name;
+			enemyCounterDisplay.GetComponent<TextMesh>().text = "Lives : " + lives.ToString(); 
+			if(tower != null)
+			{
+				NameDisplay.GetComponent<TextMesh>().text = "name : " + tower.name;
+			}
 			costDisplay.GetComponent<TextMesh>().text = "Energy : " + TowerSelector.Instance.towerCostr[TowerSelector.Instance.selectedTower ].ToString();
 			energyDisplay.GetComponent<TextMesh>().text = "Energy : " +  energy.ToString() + " / " + maxEnergy.ToString();
 			timeDisplay.GetComponent<TextMesh>().text = "Lives : " + lives.ToString();
@@ -55,9 +57,17 @@ public class HudDisplay : MonoBehaviour {
 			damageDisplay.GetComponent<TextMesh>().text = "endScore : " + endScore.ToString();
 			lives--;
 			SetHighScore();
+			TowerSelector.Instance.ResetGame();
+			energy = 0;
+			maxEnergy = initialEnergy;
+			TowerSelector.Instance.gameHasStarted = false;
 			Application.LoadLevel("HighScore");
 		}
 		
+		if(Application.loadedLevelName == "HighScore")
+		{
+			energy = initialEnergy;
+		}
 		
 	}
 	

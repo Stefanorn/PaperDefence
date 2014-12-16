@@ -11,10 +11,12 @@ public class BasicEnemy : MonoBehaviour
 	
 	private float maxHealth;
 	
-	
 	// Use this for initialization
-	void Start (){
-	maxHealth = health;
+	void Start ()
+	{
+
+		maxHealth = health;
+
 	}
 	
 	// Update is called once per frame
@@ -35,6 +37,7 @@ public class BasicEnemy : MonoBehaviour
 		}
 		
 	}
+	
 //	void OnCollisionEnter(Collision col)
 //	{
 //		if(col.collider.tag == "Bullets")

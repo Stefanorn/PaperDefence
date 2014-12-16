@@ -16,7 +16,7 @@ public class JackInABoxScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		InvokeRepeating("SpawnBullet",fireRate, fireRate);
+		InvokeRepeating("SpawnBullet",0.2f, fireRate);
 	}
 	
 	void SpawnBullet()
@@ -35,7 +35,7 @@ public class JackInABoxScript : MonoBehaviour {
 		{
 			//turretBarrel.rotation = Quaternion.RotateTowards(turretBarrel.rotation,Quaternion.LookRotation(target.transform.position - turretBarrel.position),100);
 			GameObject newBullet = Instantiate(bullet, bulletSpawner.position, Quaternion.LookRotation(target.transform.position - transform.position)) as GameObject;
-			newBullet.rigidbody.AddForce((target.transform.position - transform.position).normalized*bulletSpeed,ForceMode.VelocityChange);
+			newBullet.rigidbody.AddForce((target.transform.position - transform.position).normalized*bulletSpeed,ForceMode.Force);
 			missilDisplay.gameObject.SetActive(false);
 		}
 		Invoke("ReactiveMissle",2.0f);

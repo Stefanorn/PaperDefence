@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 2c55a89e59fdd0843a2bc52f61755812
 ModelImporter:
-  serializedVersion: 15
+  serializedVersion: 16
   fileIDToRecycleName:
     100000: Cone
     100002: Cone_1
@@ -182,11 +182,14 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
+    extraExposedTransformPaths: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -214,7 +217,6 @@ ModelImporter:
   humanDescription:
     human: []
     skeleton: []
-    handles: []
     armTwist: .5
     foreArmTwist: .5
     upperLegTwist: .5
@@ -224,6 +226,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
   additionalBone: 1
-  animationType: 1
   userData: 

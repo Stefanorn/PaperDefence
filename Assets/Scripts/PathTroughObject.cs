@@ -37,7 +37,8 @@ public class PathTroughObject : MonoBehaviour
 			}
 			else
 			{
-				movementDirection = (pathPoints[currentPathIndex].transform.position - transform.position).normalized;	
+				movementDirection = (pathPoints[currentPathIndex].transform.position - transform.position).normalized;
+				transform.rotation = Quaternion.RotateTowards(transform.rotation,Quaternion.LookRotation(pathPoints[currentPathIndex].transform.position - transform.position),90);
 			}
 			}
 	}

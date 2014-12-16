@@ -1,4 +1,0 @@
-PaperDefence
-============
-
-Paper Defence leikur

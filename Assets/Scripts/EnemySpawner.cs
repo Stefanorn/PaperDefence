@@ -9,6 +9,8 @@ public class EnemySpawner : MonoBehaviour
 	public float spawnTime;
 	public int numberOfEnemys;
 	public bool increseDifficultyByEachEnemy = true;
+	public float enemyHealthIncreser = 1.01f;
+	//private float enamyHealtInrserCatsher = 1.0f;
 	
 	private int spawnIndex = 0;
 	private float increseSawnrate = 0.95f;
@@ -29,8 +31,26 @@ public class EnemySpawner : MonoBehaviour
 		if(TowerSelector.Instance.gameHasStarted)
 		{	
 			//instantiate next enemy in spawnlist
-			GameObject refrence = Instantiate(spawnList[spawnIndex], transform.position, Quaternion.identity) as GameObject;
-			spawnIndex = Random.Range(0, spawnList.Length);
+			GameObject refrence = Instantiate(spawnList[spawnIndex], transform.position, transform.rotation) as GameObject;
+			//spawnIndex = Random.Range(0, spawnList.Length);
+			
+			if(HudDisplay.Instance.enemyConuter == 25)
+			{
+				spawnIndex++;
+			}
+			
+			if(HudDisplay.Instance.enemyConuter == 50)
+			{
+				spawnIndex++;
+			}
+					
+			
+			
+			if(spawnIndex == spawnList.Length)
+			{
+				spawnIndex = spawnList.Length;
+				increseDifficultyByEachEnemy = true;
+			}
 			
 			if(increseDifficultyByEachEnemy)
 			{

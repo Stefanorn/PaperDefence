@@ -13,7 +13,6 @@ public class RestoreSpeed : MonoBehaviour {
 	
 	void RestorSpeedFunction()
 	{
-		
 		PathTroughObject scriptInstance = gameObject.transform.parent.GetComponent<PathTroughObject>();
 		scriptInstance.speed = originalSpeed;
 		Destroy(gameObject);

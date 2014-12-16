@@ -38,8 +38,9 @@ public class SlowBullet : MonoBehaviour
 				
 				scriptInstance.speed *= slowPercentage;
 			}
+			Destroy(gameObject);
 		
 		}
-		Destroy(gameObject);
+
 	}
 }

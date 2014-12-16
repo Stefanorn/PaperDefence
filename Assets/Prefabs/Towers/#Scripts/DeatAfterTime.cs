@@ -21,7 +21,9 @@ public class DeatAfterTime : MonoBehaviour
 		{
 			currentDurationTime = 0.0001f;
 		}
-		healthBarDisplay.localScale = new Vector3( 1 * (currentDurationTime / Duration), healthBarDisplay.localScale.y, healthBarDisplay.localScale.y);
+		healthBarDisplay.localScale = new Vector3( 1 * (currentDurationTime / Duration),  1 * (currentDurationTime / Duration), healthBarDisplay.localScale.z);
+		
+		
 		
 		currentDurationTime -= Time.deltaTime;
 		

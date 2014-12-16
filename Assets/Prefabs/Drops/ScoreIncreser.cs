@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ScoreIncreser : MonoBehaviour 
 {
-	public int scoreAmount;
+	public int scoreAmount = 50;
 	void Clicked()
 	{
 		HudDisplay.Instance.score += scoreAmount;
